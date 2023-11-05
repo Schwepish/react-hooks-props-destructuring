@@ -1,6 +1,7 @@
 import React from "react";
 import MovieCard from "./MovieCard";
 
+// parent component
 function App() {
   const title = "Mad Max";
   const posterURL =
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* passing down props from the parent component */}
       <MovieCard title={title} genres={genresArr} />
     </div>
   );
